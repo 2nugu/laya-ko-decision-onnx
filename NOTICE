@@ -1,0 +1,38 @@
+laya-ko
+Copyright 2026 Hong-Gu Lee (Kangwon National University)
+
+This product includes software and model weights derived from:
+
+  Laya — https://huggingface.co/convaiinnovations/laya
+         https://github.com/NandhaKishorM/laya
+  Copyright (c) Convai Innovations
+  Licensed under the Apache License, Version 2.0.
+
+The fine-tuned weights in this repository are derived from the `multilingual`
+checkpoint of Laya, which is itself built on:
+
+  mmBERT-base — https://huggingface.co/jhu-clsp/mmBERT-base
+  Licensed under the Apache License, Version 2.0.
+
+Portions of `scripts/train.py` follow the RLCD training recipe published in
+`notebooks/laya_finetune_typed_decisions_2xT4_kaggle.ipynb` in the Laya
+repository (Apache License, Version 2.0).
+
+The `rust/` reference implementation ports `laya.common.build_sequence` and the
+post-processing in `laya.agent` from the `laya` Python package
+(Apache License, Version 2.0).
+
+Evaluation data referenced by `scripts/benchdata.py` is downloaded at run time
+from its original sources and is NOT redistributed here:
+
+  KLUE (ynat / nli / sts / re)  — CC BY-SA 4.0 — https://huggingface.co/datasets/klue/klue
+  LocalLLaMA/typed-decisions    — Apache-2.0   — https://huggingface.co/datasets/LocalLLaMA/typed-decisions
+  Kev decision-v2               — Apache-2.0   — https://github.com/jaredpalmer/kev
+  JCommonsenseQA (JGLUE)        — CC BY-SA 4.0 — https://github.com/yahoojapan/JGLUE
+  MMLU                          — MIT          — https://huggingface.co/datasets/cais/mmlu
+  KMMLU                         — see dataset card — https://huggingface.co/datasets/HAERAE-HUB/KMMLU
+
+Part of the Korean training mixture comes from AI-Hub (https://aihub.or.kr)
+corpora held under the maintainer's own AI-Hub account. Those corpora are not
+redistributed in this repository, and `scripts/traindata.py` expects them to be
+present locally. See README.md § Training data.

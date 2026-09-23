@@ -1,0 +1,26 @@
+{
+  "model": "convaiinnovations/laya",
+  "subfolder": "multilingual",
+  "rope": "fixed",
+  "tag": "baseline multilingual on Kev decision-v2",
+  "results": {
+    "en_kev_v2": {
+      "n": 1440,
+      "acc": 0.5854166666666667,
+      "ece": 0.2667005417506314,
+      "brier": 0.6729066360691086,
+      "nll": 2.189125256669681,
+      "acc@50cov": 0.7222222222222222,
+      "chance": 0.3003569578569579
+    },
+    "OVERALL": {
+      "n": 1440,
+      "acc": 0.5854166666666667,
+      "ece": 0.2667005417506314,
+      "brier": 0.6729066360691086,
+      "nll": 2.189125256669681,
+      "acc@50cov": 0.7222222222222222,
+      "chance": 0.3003569578569579
+    }
+  }
+}
