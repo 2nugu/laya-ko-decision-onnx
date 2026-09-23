@@ -243,11 +243,15 @@ clean zero-shot result. The KLUE rows do not have this problem.
 
 ## Attribution
 
-Built on [Laya](https://huggingface.co/convaiinnovations/laya) by Convai Innovations
-(Apache-2.0), which implements the decision-model architecture that
+Built on **Laya** by Convai Innovations (Apache-2.0) —
+[weights](https://huggingface.co/convaiinnovations/laya) ·
+[source](https://github.com/NandhaKishorM/laya) — which implements the decision-model
+architecture that
 [Kev](https://github.com/jaredpalmer/kev) also targets, both API-compatible with
-TypeSafe's Jev. The training recipe follows Laya's own fine-tuning notebook. The encoder
-is [mmBERT-base](https://huggingface.co/jhu-clsp/mmBERT-base) (Apache-2.0).
+TypeSafe's Jev. The training recipe follows Laya's own fine-tuning notebook, and `rust/`
+ports `laya.common.build_sequence` and the post-processing in `laya.agent`, both from the
+source repository above. The encoder is
+[mmBERT-base](https://huggingface.co/jhu-clsp/mmBERT-base) (Apache-2.0).
 
 See [`NOTICE`](NOTICE) for the full attribution list, including every evaluation dataset
 and its license.
