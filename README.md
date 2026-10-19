@@ -1,10 +1,10 @@
 # laya-ko
 
-Korean fine-tune of [Laya](https://huggingface.co/convaiinnovations/laya), a small
+Korean fine-tune of [Laya](https://huggingface.co/convaiinnovations/laya-multilingual), a small
 non-generative decision model. Same API, same 322 M parameters, same single forward
 pass — it just answers Korean typed decisions far better.
 
-**Weights:** [`2nugu/laya-ko`](https://huggingface.co/) · **License:** Apache-2.0
+**Weights:** [`2nugu/laya-ko`](https://huggingface.co/2nugu/laya-ko) · **License:** Apache-2.0
 
 > 라야(Laya)가 한국어를 잘 못하길래 튜닝해 보았습니다. 한국어 이용자분들 파이팅!
 
